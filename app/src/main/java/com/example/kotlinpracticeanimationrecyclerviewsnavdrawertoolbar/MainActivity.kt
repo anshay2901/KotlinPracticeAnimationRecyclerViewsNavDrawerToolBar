@@ -3,14 +3,24 @@ package com.example.kotlinpracticeanimationrecyclerviewsnavdrawertoolbar
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.support.v4.view.ViewPager
 import android.view.View
+import com.example.kotlinpracticeanimationrecyclerviewsnavdrawertoolbar.adtapters.ImageAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    internal lateinit var viewpager : ViewPager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        viewpager = findViewById(R.id.images) as ViewPager
+        val adapter = ImageAdapter(this)
+        viewpager.adapter = adapter
+
+
 
         Handler().postDelayed({     //Show
             showHide(hi)
@@ -26,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed({     //hide
             showHide(jst_prac)
-        }, 6000)
+        }, 5000)
 
         Handler().postDelayed({     //show
             showHide(hv_a_look)
@@ -34,15 +44,24 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed({     //hide
             showHide(hv_a_look)
-        }, 7000)
+        }, 5000)
 
         Handler().postDelayed({     //show
             showHide(images)
         }, 4000)
 
-        Handler().postDelayed({     //hide
-            showHide(images)
-        }, 8000)
+        Handler().postDelayed({     //show
+            showHide(swipe_to_see)
+        }, 4500)
+
+        Handler().postDelayed({     //show
+            showHide(rv_button)
+        }, 4500)
+
+
+
+
+
     }
 
     fun showHide(view: View) = if (view.visibility == View.VISIBLE) {

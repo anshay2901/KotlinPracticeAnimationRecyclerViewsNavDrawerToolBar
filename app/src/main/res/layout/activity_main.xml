@@ -31,7 +31,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="276dp"
             app:layout_constraintHorizontal_bias="0.496" android:textColor="#D32F2F" android:visibility="invisible"/>
-    <ImageView
+    <android.support.v4.view.ViewPager
             android:layout_width="0dp"
             android:layout_height="0dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
             android:id="@+id/images"
@@ -49,7 +49,8 @@
             android:textColor="#D32F2F"
             app:layout_constraintStart_toStartOf="@+id/images" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/images"
-            android:visibility="invisible" app:layout_constraintVertical_bias="0.0"/>
+            android:visibility="invisible" app:layout_constraintVertical_bias="0.0" android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"/>
     <Button
             android:text="To RV"
             android:layout_width="121dp"
