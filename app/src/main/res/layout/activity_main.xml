@@ -28,18 +28,18 @@
             android:layout_height="wrap_content"
             android:id="@+id/hv_a_look"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="34sp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="276dp"
             app:layout_constraintHorizontal_bias="0.496" android:textColor="#D32F2F" android:visibility="invisible"/>
     <android.support.v4.view.ViewPager
-            android:layout_width="0dp"
-            android:layout_height="0dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:layout_width="304dp"
+            android:layout_height="249dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
             android:id="@+id/images"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="100dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/rv_button"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="54dp" android:layout_marginEnd="54dp"
-            app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="75dp"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginBottom="75dp"
             android:visibility="invisible"/>
     <TextView
             android:text="Swipe the image to see more"
@@ -60,5 +60,5 @@
             android:layout_marginEnd="16dp" android:layout_marginBottom="16dp"
             app:layout_constraintEnd_toEndOf="parent" android:width="64dp"
             android:background="#292A2F" android:textColor="#D32F2F"
-            style="@android:style/Widget.Material.Button.Borderless.Colored" android:visibility="invisible"/>
+            style="@android:style/Widget.Material.Button.Borderless.Colored" android:visibility="visible"/>
 </android.support.constraint.ConstraintLayout>

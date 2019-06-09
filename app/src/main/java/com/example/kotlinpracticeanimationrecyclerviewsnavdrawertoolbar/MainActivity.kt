@@ -48,17 +48,11 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed({     //show
             showHide(images)
-        }, 4000)
+        }, 5000)
 
         Handler().postDelayed({     //show
             showHide(swipe_to_see)
-        }, 4500)
-
-        Handler().postDelayed({     //show
-            showHide(rv_button)
-        }, 4500)
-
-
+        }, 5000)
 
 
 
