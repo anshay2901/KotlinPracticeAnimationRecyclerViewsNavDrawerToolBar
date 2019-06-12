@@ -1,4 +1,4 @@
-package com.example.kotlinpracticeanimationrecyclerviewsnavdrawertoolbar.adtapters
+package com.example.kotlinpracticeanimationrecyclerviewsnavdrawertoolbar.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -53,4 +53,11 @@ class ImageAdapter(private val context : Context) : PagerAdapter() {
 R.drawable.bgone; R.drawable.bgtwo; R.drawable.bgthree; R.drawable.bgfour;
         R.drawable.bgfive; R.drawable.bgsix; R.drawable.bgseven; R.drawable.bgeight;
         R.drawable.bgnine; R.drawable.bgten
+
+
+        Unsplash:
+        Access Key:
+        7334d7ad2df9a732e2c31b05cdbabb26a5bda2e5183cc9ef6216eb578a4bf199
+        Secret key:
+        784e41ba819be8d164cd5825832468056914c4535066f1850610924d26e7a3f6
  */

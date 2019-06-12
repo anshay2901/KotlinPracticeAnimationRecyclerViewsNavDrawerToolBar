@@ -1,11 +1,12 @@
 package com.example.kotlinpracticeanimationrecyclerviewsnavdrawertoolbar
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.support.v4.view.ViewPager
 import android.view.View
-import com.example.kotlinpracticeanimationrecyclerviewsnavdrawertoolbar.adtapters.ImageAdapter
+import com.example.kotlinpracticeanimationrecyclerviewsnavdrawertoolbar.adapters.ImageAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -54,7 +55,10 @@ class MainActivity : AppCompatActivity() {
             showHide(swipe_to_see)
         }, 5000)
 
-
+        rv_button.setOnClickListener {
+            val intent = Intent(this@MainActivity, RvActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

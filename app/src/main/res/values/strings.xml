@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Kotlin Practice (Animation, Recycler Views, Nav Drawer &amp; ToolBar)</string>
+    <string name="person_name">Anshay Singh</string>
+    <string name="person_address">Bangalore, IND</string>
 </resources>
