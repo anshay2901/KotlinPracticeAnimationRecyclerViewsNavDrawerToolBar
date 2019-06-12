@@ -3,7 +3,7 @@ Practice
 
 What can this do: 
 1) Slide image backgrounds
-
-.. next commit: Some items in recycler view 
+2) Recycler View Implementation
+.. next commit: Onclicking Recycler View Items
 
 
